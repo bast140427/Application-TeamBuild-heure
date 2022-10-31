@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/karting.png" />
+         </image></ImageView>
+      <VBox prefHeight="100.0" prefWidth="448.0">
+         <children>
+            <Label fx:id="name" text="Karting">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin></Label>
+            <Label fx:id="desc" prefHeight="18.0" prefWidth="371.0" text="Petit karting convivale près de Strasbourg">
+               <VBox.margin>
+                  <Insets left="7.0" top="3.0" />
+               </VBox.margin></Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="pers" prefHeight="18.0" prefWidth="167.0" text="XX - Personnes">
+                     <HBox.margin>
+                        <Insets left="7.0" />
+                     </HBox.margin></Label>
+                  <Button fx:id="supprAct" mnemonicParsing="false" onAction="#supprimer_mesActivité" prefHeight="26.0" prefWidth="229.0" text="Supprimer activité" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin></Button>
+                  <Label fx:id="prix" prefHeight="18.0" prefWidth="129.0" text="250 €">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin></Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

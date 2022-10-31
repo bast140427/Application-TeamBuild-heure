@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="85.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="5.0" right="5.0" top="10.0" />
+         </HBox.margin>
+         <image>
+            <Image url="@image/hotel.png" />
+         </image></ImageView>
+      <VBox prefHeight="100.0" prefWidth="425.0">
+         <children>
+            <Label fx:id="name" text="Hotel">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="desc" prefHeight="17.0" prefWidth="319.0" text="Hôtel 5 étoiles en face de la mer" wrapText="true" />
+                  <Label fx:id="prix" text="12000€">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="50.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="85.0" prefWidth="278.0">
+               <children>
+                  <Label fx:id="pers" prefHeight="17.0" prefWidth="190.0" text="100 personnes max">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="button_modifier" mnemonicParsing="false" onAction="#pageHebergementInfo">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/crayon.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_hebchoisi" mnemonicParsing="false" onAction="#hebchoisi" prefHeight="25.0" prefWidth="205.0" text="Choisir cet hebergement">
+                     <HBox.margin>
+                        <Insets left="40.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

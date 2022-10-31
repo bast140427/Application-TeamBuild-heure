@@ -1,0 +1,121 @@
+/* COULEUR NAV*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@300&display=swap');
+
+
+#log{
+    -fx-background-color:#356e6f;
+}
+
+#nav_haut, #nav_gauche, #log, #nav_haut2, #logo, #button_semi, #button_tb{
+    -fx-background-color:#356e6f;
+}
+
+#nav_se_co, #button_seconnecter, #btn_retour_info, #newUserOkButton, #nav_2, #button_retour, #suivant_mesActivites, #Retour, #button_creerS, #btn_retour, #button_suivant1, #button_SuivantHebergement, #button_mesactivites, #creerEv, #button_creerTB, newUserOkButton, #connectionUserOkButton, #se_deco, #btn_nomInfo, #button_SuivantVille, #Retour{
+    -fx-background-color: #2f5156;
+}
+
+#vospresta, #vosact {
+-fx-background-color: #2f5156;
+}
+
+
+
+
+
+
+#button_mesactivites:hover, #supprAct, #ajoutAct, #vosact, #vospresta, #ajtpresta, #supprpresta, #button_SuivantVille:hover, #button_suivant1:hover, #button_SuivantHebergement:hover, #connectionUserOkButton:hover, #button_creerTB:hover, #dateEvenement, #button_creerS:hover{
+    -fx-background-color: #6fa3a7;
+}
+
+.list-view .list-cell:selected:odd,
+.list-view .list-cell:selected:even {
+    -fx-background-color: #6fa3a7;
+}
+
+#nav_gauche .label{
+    -fx-text-fill: white;
+}
+
+#S, #T, #A, #Seminaire, #Agenda, #TB{
+    -fx-text-fill: white;
+}
+
+/* COULEUR HOVER SUR BUTTON*/
+#btn_retour:hover, #button_act:hover, #btn_annuler, #btn_hebchoisi {
+    -fx-background-color: #6fa3a7;
+}
+
+.tooltip{
+    -fx-text-fill: white;
+    -fx-background-color: #6fa3a7;
+    -fx-show-delay: 250ms;
+}
+
+.tooltip img{
+    -fx-fill-width: 50%;
+    -fx-border-image-width: 50%;
+}
+
+#dashboard{
+    -fx-font-size: 30;
+    -fx-font-family: 'Lexend Tera'; /* CHOISIR FONT POUR TITRE*/
+    -fx-padding: -30 0 0 200;
+}
+
+/*-fx-padding: 8,0,0,0; pour tb semi et agenda ?*/
+#TB, #Agenda, #Seminaire{
+    -fx-text-fill: white;
+}
+#TB:hover, #A:hover, #S:hover{
+    -fx-background-color: #6fa3a7;
+    -fx-text-fill: black;
+}
+
+/*
+#button_creerS, #button_creerTB, #se_deco, #button_seconnecter, #button_EtapeS, #button_retour, #button_act{
+    -fx-text-fill: white;
+}
+*/
+/*
+#DashBoard{
+    -fx-font-style: white;
+}
+*/
+
+
+@font-face {
+    font-family: Lexend Tera;
+    src: url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@200&display=swap');
+}
+
+
+/* ********************************
+            NEW USER CSS
+  *********************************/
+
+/*gauche*/
+
+#NW_gridgauche{
+    -fx-background-color: #356e6f;
+    -fx-text-fill: white;
+}
+#NW_gridgauche .label{
+    -fx-text-fill: white;
+}
+
+/*haut*/
+
+#NW_hbox{
+    -fx-background-color: #6fa3a7;
+    -fx-text-fill: white;
+}
+
+/* ********************************
+       INFORMATIONS ÉVÉNEMENT
+  *********************************/
+
+.date-picker .cell:hover, .date-picker > .arrow-button{
+    -fx-background-color:#356e6f;
+}

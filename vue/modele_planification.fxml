@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="58.0" prefWidth="558.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="116.0" text="Nom activite">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="97.0" text="durree">
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="Choisir heure de debut">
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Spinner editable="true" prefHeight="25.0" prefWidth="101.0">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Spinner>
+         </children>
+      </HBox>
+   </children>
+</VBox>

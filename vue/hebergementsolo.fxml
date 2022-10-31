@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="41.0" prefWidth="933.0">
+            <children>
+                <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                <GridPane prefHeight="64.0" prefWidth="400.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="135.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="143.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="52.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Qui sommes nous ?" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="133.0" text="Prestations" GridPane.columnIndex="1" />
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" text="Contact" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" />
+                    </children>
+                    <HBox.margin>
+                        <Insets left="300.0" />
+                    </HBox.margin>
+                </GridPane>
+            </children>
+        </HBox>
+        <HBox prefHeight="21.0" prefWidth="933.0">
+            <children>
+                <Label prefWidth="84.0" text="Etape 1 &gt;   " textFill="#00000054">
+                    <HBox.margin>
+                        <Insets left="280.0" />
+                    </HBox.margin></Label>
+                <Label text="Etape 2 &gt;   " textFill="#00000054" />
+                <Label text="Etape 3 &gt;   ">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+                <Label text="Etape 4 &gt;   " textFill="#00000054" />
+                <Label text="Etape 5" textFill="#00000054" />
+            </children>
+            <VBox.margin>
+                <Insets top="50.0" />
+            </VBox.margin>
+        </HBox>
+        <Label text="Hebergement">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="50.0" top="20.0" />
+            </VBox.margin>
+        </Label>
+        <ImageView fitHeight="150.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="true">
+            <VBox.margin>
+                <Insets left="50.0" top="30.0" />
+            </VBox.margin>
+        </ImageView>
+        <GridPane prefHeight="216.0" prefWidth="880.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="664.0" minWidth="10.0" prefWidth="571.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="460.0" minWidth="10.0" prefWidth="362.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="128.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <VBox prefHeight="108.0" prefWidth="530.0">
+                    <children>
+                        <Label text="Endroit Nom">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" />
+                            </padding></Label>
+                        <Label text="Type">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="15.0" />
+                            </padding></Label>
+                        <Label prefHeight="41.0" prefWidth="467.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem icte" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="108.0" prefWidth="349.0" GridPane.columnIndex="1">
+                    <children>
+                        <Label text="5-7 personnes">
+                            <padding>
+                                <Insets bottom="50.0" />
+                            </padding>
+                        </Label>
+                        <Label text="à partir de 0€" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Label text="Contact">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="adresse@hotmail.com">
+                                    <font>
+                                        <Font size="12.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label text="07 86 58 05 22">
+                                    <font>
+                                        <Font size="12.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <children>
+                        <VBox prefHeight="150.0" prefWidth="173.0">
+                            <children>
+                                <Label text="Localisation">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label prefHeight="16.0" prefWidth="165.0" text="7 rue de la marge">
+                                    <font>
+                                        <Font size="12.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <ImageView fitHeight="108.0" fitWidth="290.0" pickOnBounds="true" smooth="false" />
+                    </children>
+                </HBox>
+            </children>
+            <VBox.margin>
+                <Insets left="50.0" top="15.0" />
+            </VBox.margin>
+        </GridPane>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" text="Retour">
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin></Button>
+                <VBox prefHeight="90.0" prefWidth="876.0">
+                    <children>
+                        <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="207.0" text="Ajouter aux hebergements" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="660.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="140.0" text="Etape Suivante">
+                            <VBox.margin>
+                                <Insets left="730.0" />
+                            </VBox.margin></Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="360.0" prefWidth="600.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox fx:id="nav_haut" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="600.0" text="Votre Événement" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="evnom" alignment="CENTER" prefHeight="33.0" prefWidth="599.0" text="Nom">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Label>
+            <GridPane prefHeight="50.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.4" minWidth="10.0" prefWidth="218.4" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="187.20000000000002" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="101.40000762939454" minHeight="10.0" prefHeight="76.99999618530273" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="79.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/location-plus-regular-120.png" />
+                           </image></ImageView>
+                        <Label fx:id="evlieu" prefHeight="43.0" prefWidth="43.0" text="Lieu" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="35.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/calendar-solid-120.png" />
+                           </image></ImageView>
+                        <Label fx:id="evperiode" prefHeight="36.0" prefWidth="159.0" text="Période" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="35.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/user-plus-solid-120.png" />
+                           </image></ImageView>
+                        <Label fx:id="evpersonne" prefHeight="36.0" prefWidth="163.0" text="XX Personnes">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin></Label>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="35.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="76.0" prefWidth="560.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="277.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/tennis-ball-regular-120.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="vosact" mnemonicParsing="false" onAction="#act_event" text="Vos Activités" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox prefHeight="76.0" prefWidth="309.0" GridPane.columnIndex="1">
+                     <children>
+                        <ImageView fitHeight="41.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/contact-solid-120.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="vospresta" mnemonicParsing="false" onAction="#prest_event" text="Vos Prestations" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox prefHeight="71.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/money-regular-120.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="evbudget" prefHeight="38.0" prefWidth="77.0" text="500€" />
+               </children>
+               <padding>
+                  <Insets left="253.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="-10.0" left="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="btn_retour_info" mnemonicParsing="false" onAction="#onRetourEvenement" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #2f5156;" text="Retour" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="260.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

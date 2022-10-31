@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="900.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox fx:id="nav_haut" alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="600.0" stylesheets="@dashboard.css" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Button fx:id="log" alignment="CENTER" mnemonicParsing="false" prefHeight="67.0" prefWidth="154.0">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logo1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="36.0" prefWidth="619.0" text="TeamBuild'Heure" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="se_deco" mnemonicParsing="false" onAction="#se_deconnecter" text="Deconnexion" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="4.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+   </top>
+   <left>
+      <VBox prefHeight="380.0" prefWidth="154.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="nav_se_co" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button_seconnecter" mnemonicParsing="false" onAction="#newUserMenuItemAction" text="Se connecter" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox fx:id="nav_gauche" prefHeight="421.0" prefWidth="154.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="log_teambulding" alignment="CENTER" mnemonicParsing="false" onAction="#onDashboard" prefHeight="67.0" prefWidth="154.0" text="DashBoard" textFill="WHITE">
+                        </Button>
+                     </children></HBox>
+                  <HBox fx:id="hbox_S" alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="154.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/1seminar.png" />
+                           </image></ImageView>
+                        <Label fx:id="Seminaire" text="Seminaire">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="5.0" top="2.0" />
+                     </VBox.margin></HBox>
+                  <HBox fx:id="hbox_TB" alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="154.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/management.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="TB" text="Team Building">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="5.0" top="4.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox fx:id="main" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="dashboard" prefHeight="15.0" prefWidth="629.0" text="Dashboard Team Building">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Vous n'avez pas encore créé d'événements.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="368.0" prefWidth="588.0">
+               <children>
+                  <ListView fx:id="listView_evenement" prefHeight="332.0" prefWidth="674.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </ListView>
+               </children></VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="150.0" prefWidth="588.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="588.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#creerEvenement" text="Test" />
+                        <Button fx:id="btn_hebergement" mnemonicParsing="false" onAction="#hebergement" text="Button">
+                           <HBox.margin>
+                              <Insets right="100.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="button_creerTB" disable="true" mnemonicParsing="false" onAction="#creer_TB" text="Créer Team-Building" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="button_creerS" disable="true" mnemonicParsing="false" text="Créer Séminaire" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="332.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

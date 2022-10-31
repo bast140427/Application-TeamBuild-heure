@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="436.0" prefWidth="673.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="440.0" prefWidth="673.0">
+         <children>
+            <HBox fx:id="nav_haut" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logo1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="372.0" text="Votre Événement" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <ListView fx:id="listView_event_prestation" prefHeight="263.0" prefWidth="563.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </ListView>
+            <HBox prefHeight="79.0" prefWidth="673.0">
+               <children>
+                  <Button fx:id="btn_retour_info" mnemonicParsing="false" onAction="#onRetourEvenement" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #2f5156;" text="Retour" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="300.0" top="22.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

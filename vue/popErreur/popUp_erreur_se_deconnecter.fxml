@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="419.0" stylesheets="@../dashboard.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="58.0" prefWidth="396.0" text="Cette action risque d'annuler les informations que vous venez de remplir cependant les evenements déjà crée seront sauvegarder avec votre adresse mail" textAlignment="CENTER" wrapText="true">
+         <VBox.margin>
+            <Insets left="3.0" right="3.0" top="10.0" />
+         </VBox.margin>
+         <graphic>
+            <HBox prefHeight="52.0" prefWidth="52.0">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/error-regular-108.png" />
+                     </image></ImageView>
+               </children>
+               <padding>
+                  <Insets left="10.0" top="4.0" />
+               </padding>
+            </HBox>
+         </graphic>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="32.0" prefWidth="344.0">
+         <children>
+            <Label text="Voulez-vous quand même continuez ?">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="25.0" />
+               </padding></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="344.0">
+         <children>
+            <Button fx:id="btn_continuer" mnemonicParsing="false" onAction="#Continuer_Se_Deco" text="Continuer">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_annuler" mnemonicParsing="false" onAction="#onBoutonAnnuler" stylesheets="@../dashboard.css" text="Annuler" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="900.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox fx:id="nav_haut" alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="600.0" stylesheets="@dashboard.css" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Button fx:id="log" alignment="CENTER" mnemonicParsing="false" onAction="#onButtonRetourLogo" prefHeight="67.0" prefWidth="154.0">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logo1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="36.0" prefWidth="619.0" text="TeamBuild'Heure" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="se_deco" mnemonicParsing="false" onAction="#se_deconnecter" text="Deconnexion" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="4.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+   </top>
+   <left>
+      <VBox prefHeight="380.0" prefWidth="154.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="nav_se_co" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button_seconnecter" mnemonicParsing="false" onAction="#newUserMenuItemAction" text="Se connecter" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox fx:id="nav_gauche" prefHeight="421.0" prefWidth="154.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="DashBoard" text="DashBoard" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <HBox fx:id="S" alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="154.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/1seminar.png" />
+                           </image></ImageView>
+                        <Button fx:id="button_semi" mnemonicParsing="false" onAction="#creer_S" text="Séminaire" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="5.0" top="2.0" />
+                     </VBox.margin></HBox>
+                  <HBox fx:id="TB" alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="154.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/management.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="button_tb" mnemonicParsing="false" onAction="#creer_TB" text="Team-Building" textFill="WHITE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="5.0" top="4.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Etape 1 &gt;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label text="Etape 2 &gt;">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin></Label>
+                  <Label text="Etape 3 &gt;">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin></Label>
+                  <Label text="Etape 4 &gt;">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin></Label>
+                  <Label text="Etape 5 ">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin></Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Label text="Informations événement">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="25.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="414.0" prefWidth="588.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="588.0">
+                     <children>
+                        <Label fx:id="label_nomEvent" text="Nom de votre événement">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_nbPers" text="Nombre de personnes">
+                           <HBox.margin>
+                              <Insets left="150.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="70.0" prefWidth="588.0">
+                     <children>
+                        <TextField fx:id="tf_nomEvent" prefHeight="25.0" prefWidth="180.0" promptText="Ex : TeamBuild'Heure">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tf_nbPers" onKeyTyped="#budgetParPers" prefHeight="26.0" prefWidth="100.0" promptText="8,12,25...">
+                           <tooltip>
+                              <Tooltip fx:id="ttpers" text="Renseignez un nombre." />
+                           </tooltip>
+
+                           <HBox.margin>
+                              <Insets left="150.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="207.0" prefWidth="588.0">
+                     <children>
+                        <VBox prefHeight="207.0" prefWidth="253.0">
+                           <children>
+                              <Label fx:id="label_budget" text="Budget">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="tf_budget" onKeyTyped="#budgetParPers" promptText="200,750...">
+                                 <VBox.margin>
+                                    <Insets left="70.0" right="30.0" top="10.0" />
+                                 </VBox.margin>
+                                 <tooltip>
+                                    <Tooltip fx:id="ttbudget" text="Renseignez un nombre." />
+                                 </tooltip>
+                              </TextField>
+                              <Label fx:id="label_prixParPersonne" text="Prix par personne">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="50.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="tf_budgetParPersonne" editable="false">
+                                 <VBox.margin>
+                                    <Insets left="70.0" right="30.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="207.0" prefWidth="336.0">
+                           <children>
+                              <Label fx:id="label_periode" text="Période">
+                                 <VBox.margin>
+                                    <Insets left="40.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dpk_dateDebut" onAction="#onActionDateDebut" promptText="Date de Debut">
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" left="70.0" top="10.0" />
+                                 </VBox.margin></DatePicker>
+                              <DatePicker fx:id="dpk_dateFin" onAction="#onActionDateFin" promptText="Date de Fin">
+                                 <VBox.margin>
+                                    <Insets left="70.0" top="10.0" />
+                                 </VBox.margin>
+                              </DatePicker>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin></VBox>
+                     </children></HBox>
+               </children></VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="150.0" prefWidth="588.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="588.0">
+                     <children>
+                        <Button fx:id="btn_retour" mnemonicParsing="false" onAction="#onButtonRetour" prefHeight="26.0" prefWidth="99.0" text="Retour" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" right="365.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="button_suivant1" mnemonicParsing="false" onAction="#etape_suivante" prefHeight="26.0" prefWidth="147.0" text="Etape suivante" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="332.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
